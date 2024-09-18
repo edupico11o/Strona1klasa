@@ -1,0 +1,554 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+         /* Gora */
+.naglowek_index{
+    width: 100%;
+    height: 100px;
+    color: rgb(15, 146, 15);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav{
+    width: 1020px;
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+}
+
+.main-nav ul{
+    list-style-type: none; 
+    justify-content: center;  
+    width: 100%;
+}
+
+.main-nav a{
+    font-size: 19px;
+    color: rgb(15, 146, 15);
+    text-decoration: none;
+    display: block;
+    width: 180px;
+    height: 30px;
+    padding: 14px 80px;
+    text-align: center;
+    margin: auto;
+}
+#amain1:hover{
+    border-radius: 0 0 0 15px;
+}
+
+#amain3:hover{
+    border-radius: 0 0 15px 0;
+}
+#amain1:hover, #amain2:hover, #amain3:hover {
+    color: black;
+    background: linear-gradient(-65deg,green,rgb(25, 94, 25) );
+}
+
+            /* Gora */
+
+            /* srodek */
+
+            /* index */
+.main-sect {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 191px 60% 191px;
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "reklama1 main reklama2";
+}
+
+.main-article{
+    padding: 20px;
+    grid-area: main;
+}
+.reklama-1{
+    grid-area: reklama1;
+    margin-right: 5px;
+    border-radius: 30px 0 0 0;
+}
+.reklama-2{
+    grid-area: reklama2;
+    margin-left: 5px;
+    border-radius: 0 30px 0 0;
+}
+.reklama-1 , .reklama-2{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(85deg, rgb(0, 0, 0), rgb(56, 54, 54), rgb(128, 128, 128));
+}
+.reklamy{
+    width: 140px;
+    height: 600px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5,1fr);
+}
+.reklamy img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+            /* index */
+
+            /* podstrona3 */
+.pdst3-sect{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 30px 30px 0 0;
+}
+.porady{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.porada{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    perspective: 900px;
+    color: white;
+}
+
+#prd1 , #prd2, #prd3 {
+    float: right;
+    margin: 50px;
+}
+
+#prd1::after {
+    content: 'Bądź ostrożny - nie klikaj w podejrzane linki , nie wchodź na podejrzane strony internetowe';
+}
+#prd1::before{
+    content: 'Porada #1';
+}
+
+#prd2::after {
+    content: 'Silne hasło - używaj haseł, które mają min 8 znaków , stosuj znaki specjalne , małe i duże litery oraz cyfry';
+}
+#prd2::before{
+    content: 'Porada #2';
+}
+
+#prd3::after {
+    content: 'Antywirus - używaj antywirusa oraz regularne aktualizuj aplikacje oraz system operacyjny';
+}
+#prd3::before{
+    content: 'Porada #3';
+}
+
+.porada::before, .porada::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.3s transform linear;
+    padding: 15px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.porada::after{
+    transform: rotateX(-180deg);
+    background: linear-gradient(rgb(255, 255, 255), rgb(175, 172, 172));
+    color: black;
+}
+
+.porada::before {
+    background:linear-gradient(rgb(70, 66, 66), rgb(0, 0, 0));
+    color: white;
+}
+
+.porada:hover::before {
+    transform: rotateX(-180deg);
+}
+
+.porada:hover::after {
+    transform: rotate(360deg);
+}
+
+            /* podstrona3 */
+            
+            /* podstrona2 */
+.pdst2-sect{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    border-radius: 30px 30px 0 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.pdst2-article h2 a{
+    color: rgb(143, 70, 70);
+    text-decoration: none;
+
+}
+.pdst2-article dl{
+    margin: 15px;
+}    
+.pdst2-article dl a{
+    text-decoration: none;
+}
+.pdst2-article dt{
+    font-size: 30px;
+    margin-left: 30px;
+}
+.pdst2-article dd{
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.pdst2-article dd img{
+    width: 80px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+.numer1 a{
+    color: gold;
+}
+
+.numer2, .numer3, .numer4, .numer5{
+    clear: left;
+    
+}
+.numer2 a{
+    color: rgb(212, 212, 212);
+}
+.numer3 a{
+    color: rgb(90, 34, 34);
+}
+.numer4 a{
+    color: rgb(42, 53, 35);
+}
+.numer5 a{
+    color: rgb(88, 85, 85);
+}
+            /* podstrona2 */
+            
+            /* srodek */
+
+            /* dol */       
+.main-footer{
+    color: rgb(15, 146, 15);
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 26% 26% 26%;
+    text-align: center;
+    line-height: 26px;
+    height: 100px;
+    width:80%;
+    margin: auto;
+}
+.kolumna1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.pdst-footer{
+    text-align: center;
+    background-color: black;
+    height:100px ;
+    width: 80%;
+    margin: auto;
+}
+
+            /* dol */
+
+            /* ogolne */
+.naglowek_index, .main-footer , .pdst-footer , .main-nav{
+    background: linear-gradient(65deg, rgb(0, 0, 0) , rgb(56, 54, 54), rgb(128, 128, 128));
+}
+
+.main-footer , .pdst-footer{
+    border-radius: 0 0 30px 30px;
+}
+
+.main-article, .pdst3-sect , .pdst2-sect{
+    background-color: grey;
+}
+.reklama-1 , .reklama-2 , .main-article , .pdst3-sect , .pdst2-sect{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h2 {
+    color: white;
+}
+.main-article p , .pdst3-sect p , .pdst2-sect p{
+    font-size: 20px;
+    padding: 15px;
+}
+.main-article ul , .pdst3-sect ul , .pdst2-sect ul{
+    list-style-type: square;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 15px;
+}
+.main-article dl{
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 15px;
+}
+dl dt{
+    color: yellowgreen;
+}
+dl dd{
+    margin-left: 30px;
+}
+p a{
+    text-decoration: none;
+    color: rgb(143, 70, 70);
+}
+
+span{
+    color: yellowgreen;
+    font-weight: 700;
+}
+.hr-1{
+    margin: auto;
+    width: 100px;
+    border: 1px solid rgb(15, 146, 15);
+}
+
+
+            /* ogolne */
+
+@media only screen and (max-width:1400px) {
+    .porada::before, .porada::after {
+        width: 250px;
+        height: 250px;
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width:1050px){
+    .naglowek_index{
+        width: 100%;
+        font-size: 20px;
+    }
+
+
+
+    .main-nav{
+        width: 300px;
+        height: 174px;
+    }
+    .main-nav ul{
+       display: block;
+       width: 100%;
+       height: 100%;
+    } 
+    .main-nav a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 30px;
+        font-size: 15px ;
+    }
+    #amain1:hover  , #amain2:hover{
+        border-radius: 0 0 0 0;
+    }
+    #amain3:hover{
+        border-radius: 0 0 15px 15px;
+    }
+
+    .reklama-1{
+        display: none;
+    }
+
+    .main-sect{
+        display: grid;
+        grid-template-columns: 60% 150px;
+        grid-template-rows: 100%;
+        grid-template-areas: "tekst reklama";
+    }
+
+    .main-article{
+        grid-area: tekst;
+        border-radius: 30px 0 0 0 ;
+    }
+    .main-article iframe{
+        width: 280px;
+        height: 200px;
+    }
+    .reklama-2{
+        grid-area: reklama;
+    }
+
+    #r2v1 , #r2v2{
+        display: none;
+    }
+
+    .reklama-2 img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .main-article p, .pdst3-sect p, .pdst2-sect p{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .main-article dt {
+        font-size: 15px;
+    }
+    .main-article li , .pdst3-article li , .main-article dd{
+        font-size: 15px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .porada::before,.porada::after {
+        width: 150px;
+        height: 150px;
+        font-size: 15px;
+    }
+
+    .pdst2-article dt {
+        font-size: 20px;
+    }
+    
+    .pdst2-article dd {
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    
+    .pdst2-article dd img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .hr-1 {
+        width: 60px;
+    }
+
+    .pdst-footer {
+        height: 80px
+    }
+
+    .main-footer {
+        line-height: 26px;
+        height: 80px;
+        width: 80%;
+    }
+    
+    .kolumna1 img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .naglowek_index {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .main-nav {
+        width: 200px;
+        height: 144px;
+    } 
+    
+    .main-nav a {
+        width: 40px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+
+    .reklama-2{
+        display: none;
+    }
+    .main-sect{
+        display: flex;
+        justify-content: center;
+    }
+    .main-article{
+        border-radius: 0 0 0 0 ;
+    }
+
+    .main-article p, .pdst3-sect p, .pdst2-sect p {
+        font-size: 12px;
+        padding: 7px;
+    }
+    
+    .main-article dt {
+        font-size: 12px;
+    }
+    
+    .main-article li, .pdst3-article li, .main-article dd {
+        font-size: 12px;
+    }
+    
+    h2 {
+        font-size: 15px;
+    }
+   #prd1, #prd2, #prd3 {
+       margin: -50px;
+   }
+   #prd1{
+       margin-top: 20px;
+   }
+    .porada::before, .porada::after {
+        width: 150px;
+        height: 150px;
+        font-size: 15px;
+    }
+    
+    .pdst2-article dt {
+        font-size: 15px;
+    }
+    
+    .pdst2-article dd {
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    
+    .pdst2-article dd img {
+        display: none;
+    }
+    
+    .porady{
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+    }
+     
+    .main-footer {
+        display: block;
+        font-size: 13px;
+        height:130px;
+    }
+
+    .main-footer .kolumna1 img {
+        display: none;
+    }
+
+    .kolumna2{
+        margin-bottom:12px; 
+    }
+
+
+}
